@@ -1,0 +1,8 @@
+.thread-card-container {
+    background-color: black;
+}
+
+#threadTree [data-properties~="new"]:not(.selected) .thread-card-container :is(.subject, .date) {
+    color: var(--color-red-60) !important;
+}
+
