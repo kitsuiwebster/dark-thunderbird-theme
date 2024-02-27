@@ -1,8 +1,106 @@
 .thread-card-container {
-    background-color: black;
+    margin-left: 1.2rem;
 }
 
 #threadTree [data-properties~="new"]:not(.selected) .thread-card-container :is(.subject, .date) {
-    color: var(--color-red-60) !important;
+    color: rgb(255, 64, 64) !important;
 }
 
+tr[data-properties~="new"] .thread-card-container::after {
+    content: url(https://raw.githubusercontent.com/kitsuiwebster/portfolio/master/public/favicon24.ico) !important;
+    margin-top: 1.45rem;  
+}
+
+td,
+.container {
+    cursor: pointer !important;
+}
+
+#folderPane,
+td,
+.thread-card-container,
+#unifiedToolbarContent,
+#unifiedToolbarContainer,
+.titlebar-button,
+#tabs-toolbar,
+#tabmail-tabs,
+#folderPaneHeaderBar,
+#threadPaneHeaderBar {
+    background-color: black !important;
+}
+
+element {
+    height: 3rem !important;
+}
+
+.sender {
+    font-size: 17px;
+}
+
+.subject {
+    font-size: 15px !important;
+    font-weight: 400 !important;
+}
+
+.thread-card-container {
+    gap: 0 !important;
+}
+
+#threadTree [data-properties~="unread"] .thread-card-container :is(.sender, .subject) {
+    color: rgb(255, 255, 130) !important;
+}
+
+#folderPaneWriteMessage {
+    background-color: rgb(255, 255, 130) !important;
+}
+
+.button.button-primary {
+    color: black !important;
+    border-color: black !important;
+}
+
+li.selected > .container {
+    background-color: black !important;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+#folderTree:focus-within li.selected > .container {
+    color: white;
+}
+#folderTree li.drop-target > .container,
+#folderTree:focus-within li.selected.new-messages > .container > .name,
+#folderTree:focus-within li.selected > .container > .unread-count,
+.new-messages > .container > .name,
+.unread > .container > .unread-count {
+    color: red !important;
+}
+
+.unread > .container > .unread-count {
+    background-color: white !important;
+}
+
+.new-messages > .container > .unread-count {
+    color: white !important;
+    background-color: red !important;
+}
+
+#folderTree:focus-within li.selected > .container > .unread-count {
+    color: black !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (-moz-overlay-scrollbars) {
+    .thread-card-container {
+        height: 5rem !important;
+    }
+}
