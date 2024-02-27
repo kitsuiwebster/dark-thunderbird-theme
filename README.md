@@ -1,1 +1,3 @@
-# Dark ThunderBird Theme - WIP
+# Dark ThunderBird Theme
+
+![ThunderBird Inbox](assets/inbox.png)
